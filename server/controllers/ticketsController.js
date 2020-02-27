@@ -88,6 +88,7 @@ ticketsController.updateTicketStatus = (req, res, next) => {
     db.query(updateTicket)
         .then(success => {
             console.log(success);
+            console.log('testing github issues');
             // res.locals.tickets = success
             return next();
         })
